@@ -8,7 +8,7 @@ first and your OOP knowledge second. Stay calm regarding specifics and new featu
 We're looking for code that works first, refactors and improves the code second.
 
 # Application Feature 
-This Symfony application is the beginning of a fictional SuperHero API used by a mobile app. 
+This Symfony application is the beginning of a fictional Superhero API used by a mobile app. 
 
 A previous developer started the project but has since moved on, leaving it unfinished.
 
