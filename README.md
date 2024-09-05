@@ -36,6 +36,10 @@ bin/               # Contains the console commands to help you run the applicati
 docker/            # Contains the docker configuration files
 ```
 
+## Useful Staring Points
+1. The application is built using the latest LTS version of Symfony v6.4. Documentation can be found [here](https://symfony.com/doc/6.4/index.html).
+2. The controller for the problematic endpoint is located [here](https://github.com/immediate-media/Its-Super/blob/main/app/src/Controller/SuperHeroController.php)
+
 # Submission Instructions
 
 1. Clone this repository. 
