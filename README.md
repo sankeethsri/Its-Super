@@ -1,7 +1,7 @@
 # It's Super! (Buggy)
 This repository contains a Symfony-based application with a superhero theme.
 The controller and service generate superhero names, powers, and battle cries, but the code has intentional bugs.
-Your task is to identify and fix the issues while improving the overall functionality, if you don't mind.
+Your task is to identify and fix the issues while improving the overall functionality.
 Show your skills in PHP and OOP by first fixing the list of known bugs. If you have time, please improve
 the codebase by refactoring or adding new features. Remember, this is a chance to demonstrate your problem-solving skills 
 first and your OOP knowledge second. Stay calm regarding specifics and new features, and fix the bugs first.  
@@ -13,7 +13,7 @@ This Symfony application is the beginning of a fictional SuperHero API used by a
 A previous developer started the project but has since moved on, leaving it unfinished.
 
 At the moment, it provides a single endpoint that returns a specified superhero, their superpower, battle cry,
-power level, commit book universe. 
+power level, and comic-book/manga universe. 
 
 You can access the endpoint by running the following command in your terminal:
 
