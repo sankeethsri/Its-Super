@@ -1,7 +1,7 @@
 # It's Super! (Buggy)
 This repository contains a simple Symfony application designed to assess developer skills.
-The code has intentional bugs, a design that lends itself towards improvement. 
-If you accept the challenge, you will show your skills in PHP and OOP by fixing the list of known bugs.
+The code has intentional bugs and is designed in a way that lends itself towards refactoring.  
+Your challenge, should you choose to accept it, is to fix the list of known bugs described below.
 Should time allow, refactoring the codebase or adding new features is welcome.
 Please remember that this repository is a chance to show your problem-solving skills first and your OOP knowledge second.
 Please don't get bogged down on adding new features or overly ambitious refactors; it is more favourable to deliver a working solution on time then
