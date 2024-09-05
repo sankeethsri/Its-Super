@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# To run this script, you need to have Docker installed on your machine.
+# Simply run /bin/boot from the root of the project to start the app.
+cd $(pwd);
+
+echo "Building the app and launching in your default browser...";
+docker compose down --remove-orphans --volumes
+docker compose --progress quiet build
+docker compose up -d
+
+# Check if the app is ready to be launched
+for i in {1..90}; do
+  #  check if the container has marked it self as ready
+  if docker compose logs app | grep "ready to handle connections" > /dev/null 2>&1; then
+            # Good to go
+     break
+  fi
+    #  Check if the container has died
+  if ! docker ps -q --no-trunc | grep $(docker compose ps -q app) > /dev/null 2>&1; then
+    if [ $i -gt 5 ]; then
+      echo "The app container has died. Please check the logs for more information."
+      exit 1
+    fi
+  fi
+
+
+  # Print a message every 5 seconds to indicate that the script is still watching
+  if [ $(( i % 5 )) -eq 0 ]; then
+      echo "Waiting for container to mark itself as ready..."
+  fi
+
+  # Wait 1 second before checking again
+  sleep 1
+done
+
+echo "Application is ready!"
+# Open the app in the default browser
+open http://localhost:8000/
