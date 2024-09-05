@@ -25,7 +25,7 @@ curl http://localhost:8000/super-hero/data
 
 1. When passing in a hero query string parameter, the application returns a 500 error or a random hero.
 2. The response is meant to return a JSON object, but at the moment, it returns a string representing the data. 
-3. When the Vegeta hero is returned, the application returns a 500 error.
+3. When the hero Vegeta is returned, the application returns a 500 error.
 
 ## Project Structure
 The project directory structure is as follows:
