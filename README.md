@@ -1,18 +1,18 @@
-# Its Super! (Buggy)
+# It's Super! (Buggy)
 This repository contains a Symfony-based application with a superhero theme.
 The controller and service generate superhero names, powers, and battle cries, but the code has intentional bugs.
-Your task is to identify and fix the issues while improving the overall functionality. 
-Show your skills in PHP and OOP by firstly fixing the list of known bugs. Should you have time, feel free to improve
+Your task is to identify and fix the issues while improving the overall functionality, if you don't mind.
+Show your skills in PHP and OOP by first fixing the list of known bugs. If you have time, please improve
 the codebase by refactoring or adding new features. Remember, this is a chance to demonstrate your problem-solving skills 
-first, and your OOP knowledge second. Don't get bogged down in specifics or new features, fix the bugs first.  
-We're looking for code that works first, refactor and improve the code second.
+first and your OOP knowledge second. Stay calm regarding specifics and new features, and fix the bugs first.  
+We're looking for code that works first, refactors and improves the code second.
 
 # Application Feature 
-This symfony application is the beginnings of a fictional SuperHero API to be used by a mobile app. 
+This Symfony application is the beginning of a fictional SuperHero API used by a mobile app. 
 
-A previous developer has started the project but has since moved on, leaving the project in an unfinished state.
+A previous developer started the project but has since moved on, leaving it unfinished.
 
-At the moment it provides a single endpoint that returns a specified superhero, their superpower, battle cry,
+At the moment, it provides a single endpoint that returns a specified superhero, their superpower, battle cry,
 power level, commit book universe. 
 
 You can access the endpoint by running the following command in your terminal:
@@ -23,9 +23,9 @@ curl http://localhost:8000/super-hero/data
 
 # Known Bugs
 
-1. When passing in a hero query string parameter, the application either returns a 500 error or a random hero.
-2. The response is meant to return a json object, but at the moment it returns a string representing the data. 
-3. When the Vegeta hero is returned the application returns a 500 error.
+1. When passing in a hero query string parameter, the application returns a 500 error or a random hero.
+2. The response is meant to return a JSON object, but at the moment, it returns a string representing the data. 
+3. When the Vegeta hero is returned, the application returns a 500 error.
 
 ## Project Structure
 The project directory structure is as follows:
@@ -43,7 +43,7 @@ docker/            # Contains the docker configuration files
 3. Submit your solution as a pull request to this repository.
 4. Include a brief description of the bugs you fixed, the refactorings you made, and any new features you added.
 5. Include any instructions on how to run your solution if relevant 
-6. The pull request will be reviewed by the team and feedback will be provided.
+6. The team will review the pull request, and feedback will be provided.
 
 # Bonus Points
 1. Refactor the codebase as you see fit.
@@ -69,7 +69,7 @@ After running the command, you can access the project at the following URL: [htt
 
 You should see the default Symfony welcome page.
 
-You may need to wait a small while for the application to finish downloading and installing requirements. 
+You may need to wait a short while for the application to finish downloading and installing requirements. 
 
 You can inspect the application container to see if it's ready by running the following command:
 
@@ -85,8 +85,8 @@ app-1  | [05-Sep-2024 19:57:00] NOTICE: ready to handle connections
 
 ## Helpful Commands
 
-To save time, you can run the following command to boot the application and automatically open in your default browser
-when its ready: 
+To save time, you can run the following command to boot the application and automatically open it in your default browser
+when it's ready: 
 
 ```bash
 bin/boot
