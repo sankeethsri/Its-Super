@@ -1,11 +1,11 @@
 # It's Super! (Buggy)
-This repository contains a Symfony-based application with a superhero theme.
-The controller and service generate superhero names, powers, and battle cries, but the code has intentional bugs.
-Your task is to identify and fix the issues while improving the overall functionality.
-Show your skills in PHP and OOP by first fixing the list of known bugs. Please improve
-the codebase by refactoring or adding new features if you have time. Remember, this is a chance to demonstrate your problem-solving skills 
-first and your OOP knowledge second. Stay calm regarding specifics and new features, and fix the bugs first.  
-We're looking for code that works first and refactors and improvements second.
+This repository contains a simple Symfony application designed to assess developer skills.
+The code has intentional bugs, a design that lends itself towards improvement. 
+If you accept the challenge, you will show your skills in PHP and OOP by fixing the list of known bugs.
+Should time allow, refactoring the codebase or adding new features is welcome.
+Please remember that this repository is a chance to show your problem-solving skills first and your OOP knowledge second.
+Please don't get bogged down on adding new features or overly ambitious refactors; it is more favourable to deliver a working solution on time then
+submitting an unfinished solution. 
 
 # Application Feature 
 This Symfony application is the beginning of a fictional Superhero API used by a mobile app. 
