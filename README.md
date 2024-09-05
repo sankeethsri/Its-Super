@@ -2,10 +2,10 @@
 This repository contains a Symfony-based application with a superhero theme.
 The controller and service generate superhero names, powers, and battle cries, but the code has intentional bugs.
 Your task is to identify and fix the issues while improving the overall functionality.
-Show your skills in PHP and OOP by first fixing the list of known bugs. If you have time, please improve
-the codebase by refactoring or adding new features. Remember, this is a chance to demonstrate your problem-solving skills 
+Show your skills in PHP and OOP by first fixing the list of known bugs. Please improve
+the codebase by refactoring or adding new features if you have time. Remember, this is a chance to demonstrate your problem-solving skills 
 first and your OOP knowledge second. Stay calm regarding specifics and new features, and fix the bugs first.  
-We're looking for code that works first, refactors and improves the code second.
+We're looking for code that works first and refactors and improvements second.
 
 # Application Feature 
 This Symfony application is the beginning of a fictional Superhero API used by a mobile app. 
