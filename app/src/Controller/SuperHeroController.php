@@ -27,11 +27,11 @@ class SuperHeroController extends AbstractController
         $heroRequested = $request->query->get('hero');
 
         // Validate hero request
-        $validHeros = ['hulk', 'ironman', 'spiderman', 'thor', 'wolverine', 'goku', 'vegeta'];
+        $validHeroes = ['hulk', 'ironman', 'spiderman', 'thor', 'wolverine', 'goku', 'vegeta'];
 
-        if($heroRequested === null || !in_array($heroRequested, $validHeros)){
+        if($heroRequested === null || !in_array($heroRequested, $validHeroes)){
             return new JsonResponse([
-                'error' => 'Invalid hero name. Choose from: ' . implode(', ', $validHeros)
+                'error' => 'Invalid hero name. Choose from: ' . implode(', ', $validHeroes)
             ]);
         }
 
