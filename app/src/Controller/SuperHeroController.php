@@ -26,6 +26,15 @@ class SuperHeroController extends AbstractController
         // Retrieve 'hero' from query string
         $heroRequested = $request->query->get('hero');
 
+        // Validate hero request
+        $validHeros = ['hulk', 'ironman', 'spiderman', 'thor', 'wolverine', 'goku', 'vegeta'];
+
+        if($heroRequested === null || !in_array($heroRequested, $validHeros)){
+            return new JsonResponse([
+                'error' => 'Invalid hero name. Choose from: ' . implode(', ', $validHeros)
+            ]);
+        }
+
         // Get the hero requested
         $hero = $this->superheroService->getSuperHero($heroRequested);
 
