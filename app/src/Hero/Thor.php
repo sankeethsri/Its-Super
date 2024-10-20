@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Hero;
 
-class Thor
+use App\Interface\SuperheroInterface;
+
+class Thor implements SuperheroInterface
 {
     public function getSuperpower(): string
     {
@@ -19,5 +21,10 @@ class Thor
     public function getPowerLevel(): string
     {
         return 'high';
+    }
+
+    public function getUniverse(): string
+    {
+        return 'Marvel';
     }
 }

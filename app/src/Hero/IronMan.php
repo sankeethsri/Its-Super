@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Hero;
 
-class IronMan
+use App\Interface\SuperheroInterface;
+
+class IronMan implements SuperheroInterface
 {
     public function getSuperpower(): string
     {
@@ -19,5 +21,10 @@ class IronMan
     public function getPowerLevel(): string
     {
         return 'medium';
+    }
+
+    public function getUniverse(): string
+    {
+        return 'Marvel';
     }
 }

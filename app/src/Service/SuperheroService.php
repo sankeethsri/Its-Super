@@ -11,6 +11,7 @@ use App\Hero\SpiderMan;
 use App\Hero\Thor;
 use App\Hero\Vegeta;
 use App\Hero\Wolverine;
+use App\Interface\SuperheroInterface;
 
 readonly class SuperheroService
 {
@@ -26,7 +27,7 @@ readonly class SuperheroService
     {
     }
 
-    public function getSuperHero(string $heroName): IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta
+    public function getSuperHero(string $heroName): SuperheroInterface
     {
         $heroes = [
             'hulk' => $this->incredibleHulk,
@@ -41,27 +42,23 @@ readonly class SuperheroService
         return $heroes[$heroName];
     }
 
-    public function getSuperpower(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string
+    public function getSuperpower(SuperheroInterface $hero): string
     {
         return $hero->getSuperpower();
     }
 
-    public function getBattleCry(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string
+    public function getBattleCry(SuperheroInterface $hero): string
     {
         return $hero->getBattleCry();
     }
 
-    public function getPowerLevel(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string
+    public function getPowerLevel(SuperheroInterface $hero): string
     {
         return $hero->getPowerLevel();
     }
 
-    public function getUniverse(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string
+    public function getUniverse(SuperheroInterface $hero): string
     {
-        return match (get_class($hero)) {
-            IncredibleHulk::class, IronMan::class, SpiderMan::class, Thor::class, Wolverine::class => 'Marvel',
-            Goku::class, Vegeta::class => 'Dragon Ball Z',
-            default => 'No Universe',
-        };
+        return $hero->getUniverse();
     }
 }

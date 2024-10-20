@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Hero;
 
-class IncredibleHulk
+use App\Interface\SuperheroInterface;
+
+class IncredibleHulk implements SuperheroInterface
 {
     public function getSuperpower(): string
     {
@@ -19,5 +21,10 @@ class IncredibleHulk
     public function getPowerLevel(): string
     {
         return 'high';
+    }
+
+    public function getUniverse(): string
+    {
+        return 'Marvel';
     }
 }

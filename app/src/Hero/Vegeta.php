@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Hero;
 
-class Vegeta
+use App\Interface\SuperheroInterface;
+
+class Vegeta implements SuperheroInterface
 {
     public function getSuperpower(): string
     {
@@ -27,5 +29,10 @@ class Vegeta
     public function getPowerLevel(): string
     {
         return 'high';
+    }
+
+    public function getUniverse(): string
+    {
+        return 'Dragon Ball Z';
     }
 }
