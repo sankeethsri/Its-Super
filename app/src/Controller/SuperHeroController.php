@@ -36,7 +36,7 @@ class SuperHeroController extends AbstractController
         $universe = match (get_class($hero)) {
             'App\Hero\Goku' => 'Dragon Ball Z',
             'App\Hero\IncredibleHulk' => 'Marvel',
-            'App\Hero\Ironman' => 'Marvel',
+            'App\Hero\IronMan' => 'Marvel',
             'App\Hero\SpiderMan' => 'Marvel',
             'App\Hero\Thor' => 'Marvel',
             'App\Hero\Vegeta' => 'Dragon Ball Z',
