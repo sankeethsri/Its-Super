@@ -13,13 +13,15 @@ class Vegeta
 
     public function getBattleCry(): string
     {
-        return array_rand([
+        $battleCries = [
             'Final Flash!',
             'Big Bang Attack!',
             'Galick Gun!',
             'It\'s over 9000!',
             'I am the prince of all Saiyans!'
-        ]);
+        ];
+
+        return $battleCries[array_rand($battleCries)];
     }
 
     public function getPowerLevel(): string
