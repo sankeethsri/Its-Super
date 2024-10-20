@@ -26,7 +26,6 @@ readonly class SuperheroService
     {
     }
 
-    // TODO: Get this to return a specific requested hero
     public function getSuperHero(string $heroName): IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta
     {
         $heroes = [
