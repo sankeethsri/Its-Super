@@ -43,7 +43,12 @@ class SuperHeroController extends AbstractController
             'App\Hero\Wolverine' => 'Marvel',
         };
 
-        // TODO: return a json object, not a string
-        return new JsonResponse("{$heroRequested} {$universe} {$power}, {$battleCry}, {$powerLevel}");
+        return new JsonResponse([
+            'name' => $heroRequested,
+            'superpower' => $power,
+            'battleCry' => $battleCry,
+            'powerLevel' => $powerLevel,
+            'universe' => $universe,
+        ]);
     }
 }
