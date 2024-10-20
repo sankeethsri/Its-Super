@@ -27,19 +27,19 @@ readonly class SuperheroService
     }
 
     // TODO: Get this to return a specific requested hero
-    public function getSuperHero(): IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta
+    public function getSuperHero(string $heroName): IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta
     {
         $heroes = [
-            $this->incredibleHulk,
-            $this->ironMan,
-            $this->spiderMan,
-            $this->thor,
-            $this->wolverine,
-            $this->goku,
-            $this->vegeta,
+            'hulk' => $this->incredibleHulk,
+            'ironman' => $this->ironMan,
+            'spiderman' => $this->spiderMan,
+            'thor' => $this->thor,
+            'wolverine' => $this->wolverine,
+            'goku' => $this->goku,
+            'vegeta' => $this->vegeta,
         ];
 
-        return $heroes[array_rand($heroes)];
+        return $heroes[$heroName];
     }
 
     public function getSuperpower(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string

@@ -27,7 +27,7 @@ class SuperHeroController extends AbstractController
         $heroRequested = $request->query->get('hero');
 
         // Get the hero requested
-        $hero = $this->superheroService->getSuperHero();
+        $hero = $this->superheroService->getSuperHero($heroRequested);
 
         $power = $this->superheroService->getSuperpower($hero);
         $battleCry = $this->superheroService->getBattleCry($hero);
