@@ -55,4 +55,13 @@ readonly class SuperheroService
     {
         return $hero->getPowerLevel();
     }
+
+    public function getUniverse(IncredibleHulk|IronMan|SpiderMan|Thor|Wolverine|Goku|Vegeta $hero): string
+    {
+        return match (get_class($hero)) {
+            IncredibleHulk::class, IronMan::class, SpiderMan::class, Thor::class, Wolverine::class => 'Marvel',
+            Goku::class, Vegeta::class => 'Dragon Ball Z',
+            default => 'No Universe',
+        };
+    }
 }

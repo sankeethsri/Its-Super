@@ -32,16 +32,7 @@ class SuperHeroController extends AbstractController
         $power = $this->superheroService->getSuperpower($hero);
         $battleCry = $this->superheroService->getBattleCry($hero);
         $powerLevel = $this->superheroService->getPowerLevel($hero);
-
-        $universe = match (get_class($hero)) {
-            'App\Hero\Goku' => 'Dragon Ball Z',
-            'App\Hero\IncredibleHulk' => 'Marvel',
-            'App\Hero\IronMan' => 'Marvel',
-            'App\Hero\SpiderMan' => 'Marvel',
-            'App\Hero\Thor' => 'Marvel',
-            'App\Hero\Vegeta' => 'Dragon Ball Z',
-            'App\Hero\Wolverine' => 'Marvel',
-        };
+        $universe = $this->superheroService->getUniverse($hero);
 
         return new JsonResponse([
             'name' => $heroRequested,
